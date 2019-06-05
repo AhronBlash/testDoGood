@@ -49,6 +49,7 @@ app.get('/all', async(req, res) => {
     res.status(200);
 });
 
-app.listen(process.env.PORT || 7700);
+var port_number = server.listen(process.env.PORT || 3000);
+app.listen(port_number);
 
 module.exports = app;
