@@ -12,6 +12,8 @@ app.options('*', cors());
 DataBase.connect()
 
 app.get('/', (req, res) => res.send('Ho World!'))
+app.get('/ttt', (req, res) => res.send('testing'))
+
 
 app.post('/addUser',async(req, res) => {
     // insert date into the data base
