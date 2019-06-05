@@ -49,6 +49,6 @@ app.get('/all', async(req, res) => {
     res.status(200);
 });
 
-app.listen(7700);
+app.listen(process.env.PORT || 7700);
 
 module.exports = app;
