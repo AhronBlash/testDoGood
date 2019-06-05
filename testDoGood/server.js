@@ -48,7 +48,6 @@ app.get('/all', async(req, res) => {
     res.status(200);
 });
 
-
 app.listen(7700);
 
 module.exports = app;
